@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Menu | Tamarind Table</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700;12..96,800&family=DM+Mono:wght@400;500&family=Instrument+Sans:wght@400;500;600&display=swap">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <a class="brand" href="index.html">Tamarind<span>.</span>Table</a>
+    <nav aria-label="Main">
+      <a href="index.html">Home</a>
+      <a href="menu.html" aria-current="page">Menu</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </header>
+
+  <main>
+    <div class="pagehead">
+      <p class="eyebrow">Menu</p>
+      <h1>What's cooking</h1>
+      <p class="lede">Prices in rupees, inclusive of tax. Tell us about allergies when you order.</p>
+    </div>
+
+    <div class="chips" role="group" aria-label="Filter menu">
+      <button class="chip" type="button" data-filter="all" aria-pressed="true">All</button>
+      <button class="chip" type="button" data-filter="tiffin" aria-pressed="false">Tiffin</button>
+      <button class="chip" type="button" data-filter="meals" aria-pressed="false">Meals &amp; Mains</button>
+      <button class="chip" type="button" data-filter="sweet" aria-pressed="false">Sweets &amp; Drinks</button>
+    </div>
+
+    <!-- To add a dish, copy one <li class="dish"> block and edit it. -->
+    <section class="cat" data-cat="tiffin">
+      <h2>Tiffin <small>All day</small></h2>
+      <ul class="dishes">
+        <li class="dish"><div class="row"><h3><span class="tag"></span>Ghee podi idli</h3><span class="p">₹ 140</span></div><p>Three mini idlis tossed in ghee and gunpowder.</p></li>
+        <li class="dish"><div class="row"><h3><span class="tag"></span>Masala dosa</h3><span class="p">₹ 170</span></div><p>Crisp rice crepe, potato masala, coconut chutney, sambar.</p></li>
+        <li class="dish"><div class="row"><h3><span class="tag"></span>Mysore set dosa</h3><span class="p">₹ 160</span></div><p>Three soft dosas with red chutney and vada saagu.</p></li>
+        <li class="dish"><div class="row"><h3><span class="tag"></span>Medu vada</h3><span class="p">₹ 110</span></div><p>Two urad dal fritters, crunchy outside and fluffy inside.</p></li>
+        <li class="dish"><div class="row"><h3><span class="tag nv"></span>Egg dosa</h3><span class="p">₹ 180</span></div><p>Dosa with a whisked egg, pepper and onion.</p></li>
+        <li class="dish"><div class="row"><h3><span class="tag"></span>Pongal</h3><span class="p">₹ 150</span></div><p>Rice and moong dal cooked soft with black pepper and cashew.</p></li>
+      </ul>
+    </section>
+
+    <section class="cat" data-cat="meals">
+      <h2>Meals &amp; Mains <small>Lunch and dinner</small></h2>
+      <ul class="dishes">
+        <li class="dish"><div class="row"><h3><span class="tag"></span>Banana-leaf meals</h3><span class="p">₹ 360</span></div><p>Rice, sambar, rasam, poriyals, kootu, curd, payasam.</p></li>
+        <li class="dish"><div class="row"><h3><span class="tag nv"></span>Chettinad chicken</h3><span class="p">₹ 420</span></div><p>Pepper-heavy dry roast with fennel and curry leaf.</p></li>
+        <li class="dish"><div class="row"><h3><span class="tag nv"></span>Meen kuzhambu</h3><span class="p">₹ 480</span></div><p>Seer fish in a tamarind and shallot gravy.</p></li>
+        <li class="dish"><div class="row"><h3><span class="tag"></span>Malabar parotta (2)</h3><span class="p">₹ 130</span></div><p>Flaky layered flatbread, served with salna.</p></li>
+        <li class="dish"><div class="row"><h3><span class="tag nv"></span>Kothu parotta</h3><span class="p">₹ 280</span></div><p>Shredded parotta, egg, onion and spiced salna on the griddle.</p></li>
+        <li class="dish"><div class="row"><h3><span class="tag"></span>Avial</h3><span class="p">₹ 240</span></div><p>Seasonal vegetables in coconut and yogurt.</p></li>
+      </ul>
+    </section>
+
+    <section class="cat" data-cat="sweet">
+      <h2>Sweets &amp; Drinks <small>Finish here</small></h2>
+      <ul class="dishes">
+        <li class="dish"><div class="row"><h3><span class="tag"></span>Filter coffee</h3><span class="p">₹ 70</span></div><p>Brass-filter decoction, hot milk, sugar to your taste.</p></li>
+        <li class="dish"><div class="row"><h3><span class="tag"></span>Rose milk</h3><span class="p">₹ 90</span></div><p>Chilled milk, rose syrup, basil seeds.</p></li>
+        <li class="dish"><div class="row"><h3><span class="tag"></span>Elaneer payasam</h3><span class="p">₹ 160</span></div><p>Tender coconut and condensed milk, served cold.</p></li>
+        <li class="dish"><div class="row"><h3><span class="tag"></span>Kesari bath</h3><span class="p">₹ 120</span></div><p>Semolina cooked with saffron, ghee and cashews.</p></li>
+        <li class="dish"><div class="row"><h3><span class="tag"></span>Buttermilk</h3><span class="p">₹ 60</span></div><p>Spiced with ginger, green chilli and curry leaf.</p></li>
+        <li class="dish"><div class="row"><h3><span class="tag"></span>Jaggery halwa</h3><span class="p">₹ 140</span></div><p>Wheat halwa with jaggery and roasted nuts.</p></li>
+      </ul>
+    </section>
+
+    <p class="note"><span class="tag"></span>vegetarian &nbsp; <span class="tag nv"></span>non-vegetarian</p>
+  </main>
+
+  <footer>
+    <span>© 2026 Tamarind Table</span>
+    <span>FSSAI Lic. No. 000 0000 0000 00</span>
+  </footer>
+</div>
+<script src="script.js"></script>
+</body>
+</html>

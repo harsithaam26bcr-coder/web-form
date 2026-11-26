@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Contact | Tamarind Table</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700;12..96,800&family=DM+Mono:wght@400;500&family=Instrument+Sans:wght@400;500;600&display=swap">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <a class="brand" href="index.html">Tamarind<span>.</span>Table</a>
+    <nav aria-label="Main">
+      <a href="index.html">Home</a>
+      <a href="menu.html">Menu</a>
+      <a href="contact.html" aria-current="page">Contact</a>
+    </nav>
+  </header>
+
+  <main>
+    <div class="pagehead">
+      <p class="eyebrow">Contact</p>
+      <h1>Find us, book a table</h1>
+    </div>
+
+    <div class="visit">
+      <div class="info">
+        <div><h3>Address</h3><p>42, 12th Main Road, HAL 2nd Stage,<br>Indiranagar, Bengaluru 560038</p></div>
+        <div><h3>Phone</h3><p><a href="tel:+918040000000">+91 80 4000 0000</a></p></div>
+        <div><h3>Email</h3><p><a href="mailto:hello@tamarindtable.example">hello@tamarindtable.example</a></p></div>
+        <div><h3>Parking</h3><p>Valet from 18:00. Street parking on 12th Main.</p></div>
+        <div><h3>Groups</h3><p>Tables of 8 or more: call us so we can set up the long table.</p></div>
+      </div>
+
+      <div>
+        <form id="book" novalidate>
+          <h2>Reserve a table</h2>
+          <label for="name">Name<input id="name" name="name" autocomplete="name" required></label>
+          <label for="phone">Phone<input id="phone" name="phone" type="tel" autocomplete="tel" required></label>
+          <div class="two">
+            <label for="date">Date<input id="date" name="date" type="date" required></label>
+            <label for="time">Time
+              <select id="time" name="time">
+                <option>12:30</option><option>13:30</option><option>19:00</option><option selected>20:00</option><option>21:00</option>
+              </select>
+            </label>
+          </div>
+          <label for="guests">Guests
+            <select id="guests" name="guests">
+              <option>1</option><option selected>2</option><option>3</option><option>4</option><option>5</option><option>6</option><option>7</option>
+            </select>
+          </label>
+          <label for="notes">Notes (optional)<textarea id="notes" name="notes" placeholder="Birthday, high chair, allergies"></textarea></label>
+          <p id="err" class="error" role="alert" hidden></p>
+          <button class="btn" type="submit">Request booking</button>
+        </form>
+
+        <div id="done" class="done" hidden>
+          <h2>Booking request ready</h2>
+          <p id="done-text"></p>
+          <p>This form does not send anything yet. Call us to confirm your table.</p>
+          <a class="btn" href="contact.html">Make another request</a>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    <span>© 2026 Tamarind Table</span>
+    <span>FSSAI Lic. No. 000 0000 0000 00</span>
+  </footer>
+</div>
+<script src="script.js"></script>
+</body>
+</html>
